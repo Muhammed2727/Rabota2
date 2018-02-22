@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+	<header>
+		<div class="btn-menu active" id="btn-menu"><span></span></div>
+		<nav class="menu">
+			<ul>
+				<li><a href="#">main slide</a></li>
+				<li><a href="#gallery">gallery</a></li>
+				<li><a href="#footer">Clients say</a></li>
+				<li><a href="#contacts">contacts</a></li>
+				<li><a href="#">call us</a></li>
+			</ul>
+		</nav>
+
+		<nav class="top-nav">
+			<div class="container">
+				<span class="brand">
+					<img src="img/logo.png" alt="">
+				</span>
+				<ul id="menu">
+					<li><a href="#">main slide</a></li>
+					<li><a href="#gallery">gallery</a></li>
+					<li><a href="#footer">Clients say</a></li>
+					<li><a href="#contacts">contacts</a></li>
+				</ul>
+				<div class="item">
+				<a href="#">call us</a>
+				</div>
+			</div>
+		</nav>		
+	</header>
+
+	<div class="gallery" id="gallery">
+		<div class="container">
+			<h2>Gallery</h2>
+			<img src="img/g1.jpg" alt="" width="32%">
+			<img src="img/g2.jpg" alt="" width="32%">
+			<img src="img/g3.jpg" alt="" width="32%" class="img0">
+			<img src="img/g4.jpg" alt="" width="32%">
+			<img src="img/g5.jpg" alt="" width="32%">
+			<img src="img/g6.jpg" alt="" width="32%" class="img0">
+		</div>
+	</div>
+
+	<div class="item1">
+		<div class="container">
+			<a href="#"><img src="img/item1.png" alt=""></a>
+			<a href="#"><img src="img/item2.png" alt=""></a>
+			<a href="#"><img src="img/item3.png" alt=""></a>
+			<a href="#"><img src="img/item4.png" alt=""></a>
+			<a href="#"><img src="img/item5.png" alt=""></a>
+			<a href="#"><img src="img/item6.png" alt="" class="item6"></a>
+		</div>
+	</div>
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<h2>our Clients say</h2>
+			<div class="info">
+				<div class="info1">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+					<img src="img/1.png" alt="">
+
+					<div class="name">
+						<p><b>Pavliv Yaroslav </b>Web designer</p>
+					</div>
+				</div>
+
+				<div class="info2">
+					<p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+					<img src="img/2.png" alt="">
+					<div class="name">
+					<p><b>John Scott </b>The Fringe</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="contacts" id="contacts">
+			<h3>CONTACTS</h3>
+			<p>Sign up for our newsletter to receive updates</p>
+			<input type="text" name="" placeholder="Name">
+			<input type="Phone" name="" placeholder="Phone">
+			<input type="email" name="" placeholder="E-mail" class="input">
+			<a href="#">SEND</a>
+		</div>
+	</footer>
+	
+
+	<script src="js/jquery-1.12.4.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+   		 	$("#menu").on("click","a", function (event) {
+       	 	event.preventDefault();
+        	var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 800);
+   		 	});
+		});
+
+
+
+		$(document).ready(function(){
+
+			$('.btn-menu').click(function(){		
+				$('.menu').slideToggle(700);	
+				if ($(this).hasClass('not-active')) {
+					$(this).addClass('is-active').removeClass('not-active');
+				}else{
+					setTimeout(function(){
+					$('.is-active').addClass('not-active').removeClass('is-active')
+					},600)			
+				}		
+			});
+		});
+	</script>
+</body>
+</html>
