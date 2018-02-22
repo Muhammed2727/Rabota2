@@ -15,8 +15,21 @@
 	.footer {
     	height: 960px;
 	}
+	.info1{
+		background: rgba(0,0,0,0.5);
+    	padding: 0 10px 10px;
+    	border-radius: 5px;
+    	width: 100%;
+    	margin-bottom: 15px;
+	}
 	.info2{
-		float: left;
+		background: rgba(0,0,0,0.5);
+    	padding: 0 10px 10px;
+    	border-radius: 5px;
+    	width: 100%;
+	}
+	.contacts{
+		margin-top: 60px;
 	}
 }
 
@@ -46,7 +59,12 @@
 	.gallery img{
 		width: 46%;
 	}
-
+	header {
+    	background: url(../img/bg.jpg) no-repeat 65% 0%;
+    }
+    .info2{
+		float: left;
+    }
 }
 
 @media screen and (max-width: 605px){
@@ -60,13 +78,13 @@
 
 @media screen and (max-width: 550px){
 	.contacts{
-		margin-top: 50px;
+		margin-top: 95px;
 	}
 }
 
 @media screen and (max-width: 450px){
 	.footer {
-    	height: 1040px;
+    	height: 1085px;
 	}
 	.info {
     	padding-bottom: 520px;
@@ -81,7 +99,7 @@
     	width: 270px;
 	}
 	.footer {
-    	height: 1170px;
+    	height: 1200px;
 	}
 }
 
