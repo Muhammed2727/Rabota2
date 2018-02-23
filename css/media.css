@@ -78,7 +78,13 @@
 
 @media screen and (max-width: 550px){
 	.contacts{
-		margin-top: 95px;
+		margin-top: 60px;
+	}
+}
+
+@media screen and (max-width: 523px){
+	.contacts{
+		margin-top: 90px;
 	}
 }
 
@@ -88,6 +94,15 @@
 	}
 	.info {
     	padding-bottom: 520px;
+	}
+	.contacts{
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 485px){
+	.contacts{
+		margin-top: 0;
 	}
 }
 
@@ -99,7 +114,22 @@
     	width: 270px;
 	}
 	.footer {
-    	height: 1200px;
+    	height: 1090px;
+	}
+}
+
+@media screen and (max-width: 333px){
+	.footer {
+    	height: 1150px;
+	}
+}
+
+@media screen and (max-width: 315px){
+	.contacts{
+		margin-top: 50px;
+	}
+	.footer {
+    	height: 1170px;
 	}
 }
 
