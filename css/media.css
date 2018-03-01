@@ -6,7 +6,6 @@
 		margin-right: 13px;
 	}
 	.item1 img {
-	    margin-right: 50px;
 	    width: 60px;
 	}
 	.info{
@@ -102,7 +101,7 @@
 
 @media screen and (max-width: 485px){
 	.contacts{
-		margin-top: 0;
+		margin-top: 0px;
 	}
 }
 
@@ -132,11 +131,22 @@
     	height: 1170px;
 	}
 }
+@media screen and (max-width: 280px){
+	.info p{
+		line-height: 20px;
+	}
+}
 
 
 
 @media screen and (min-width: 925px){
 	.btn-menu{
+		display: none;
+	}
+	.menu{
+		height: 0;
+	}
+	.menu ul li{
 		display: none;
 	}
 }
